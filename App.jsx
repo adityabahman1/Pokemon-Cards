@@ -6,7 +6,7 @@ const App = () => {
   const [pokemon, setPokemon] = useState([]);
   const [search, setSearch] = useState("");
 
-  // Fetch Pokémon Data from API
+  // Fetch Pokemon Data from API
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon?limit=50")
       .then((response) => {
